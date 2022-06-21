@@ -78,8 +78,28 @@ hr.solid{
   -webkit-transition: background 0.25s linear;
 }
 
+.temperament-prev-button{
+  letter-spacing: 0px;
+  font-weight: 700;
+  border-color: #577049;
+  border-style: solid;
+  border-width: 1px;
+  padding: 15px 25px 15px 25px;
+  border-radius: 99px;
+	font-size: 15px;
+	color: #577049;
+	background-color: white;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+}
+
 .temperament-next-button:hover{
     background-color: #577049;
+	color: #ffffff;
+}
+
+.temperament-prev-button:hover{
+  background-color: #577049;
 	color: #ffffff;
 }
 
@@ -114,11 +134,23 @@ input[type='radio']:checked:before {
 .form-step{
   display: none;
   opacity: 0;
-  transition: visibility 0s, opacity 0.5s linear;
+  animation: slide 0.5s forwards;
 }
 
 .form-step.form-step-active{
   
   display: block;
   opacity: 1;
+}
+
+
+@keyframes slide {
+  from{
+    transform: scale(0,0);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1, 1);
+    opacity: 1;
+  }
 }
