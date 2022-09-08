@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,525 +8,900 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <script type="text/javascript" src="js/temperament-form.js" defer></script>
     <title>What's your Temperament?</title>
 </head>
+
 <body>
 
     <div class="temperament-container">
-
         <header>What's your temperament?</header>
         <div class="temperament-form-outer">
+
+
+            <div class="temperament-results">
+
+                <div id="leaves">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+
+                <div class="temperament-logo">
+                    <img class="temperament-image" src="images/option6Trns.png" width="300px" height="300px"
+                        alt="Tibb Doctor Logo" />
+                </div>
+                <div class="dominant-temperament">
+                    <div class="dominant-box">
+                        <img class="dominant-icon" src="images/bilious.png" width="100px" height="100px">
+                    </div>
+
+                    <p class="dominant-text">Dominant Text</p>
+                    <div class="sanguinous-description">
+                        <p><strong>Physical appearance:</strong> Medium to large frame, more muscle, a macho walk,
+                            reddish
+                            or shiny complexion, warm and moist skin texture; speech: clear and moderate.</p>
+
+                        <p><strong>Tendencies:</strong> As this temperamental type has Hot & Moist qualities, they
+                            prefer
+                            Cold & Dry weather, cold drinks, have a healthy appetite, require 6-8 hours moderate to deep
+                            sleep. He/she will be inclined to illnesses such as hypertension and/or diabetes.</p>
+
+                        <p><strong>Personality traits:</strong> Typical extrovert, carefree, persuasive, sociable,
+                            talkative, outgoing, optimistic – “a get acknowledged person”. They may also be disorganized
+                            and
+                            tend to exaggerate.</p>
+                    </div>
+
+                    <div class="phlegmatic-description">
+                        <p><strong>Physical appearance:</strong> Medium to large frame, more fat, a slow walk, pale
+                            complexion, cold, soft and moist skin texture, speech: slow and soft.</p>
+
+                        <p><strong>Tendencies:</strong> As this temperamental type has Cold & Moist qualities, they
+                            prefer
+                            Hot & Dry weather, hot drinks, have a low appetite, require at least 8 hours deep sleep.
+                            He/she
+                            will be inclined to illnesses such as phlegm related disorders.</p>
+
+                        <p><strong>Personality traits:</strong> Introvert, calm, accommodating, patient, relaxed a good
+                            listener, indecisive – “a get along person”. They may also be push over’s and shy.</p>
+                    </div>
+
+                    <div class="bilious-description">
+                        <p><strong>Physical appearance:</strong> Medium frame, lean, firm walk, Hot & Dry skin texture,
+                            speech: loud.</p>
+
+                        <p><strong>Tendencies:</strong> As this temperamental type has Hot & Dry qualities, they prefer
+                            Cold
+                            & Moist weather, cold drinks –healthy appetite and cannot skip meals, require 5-6 hours
+                            sound
+                            sleep. He/she will be inclined to illnesses such as stress, anxiety and hay-fever.</p>
+
+                        <p><strong>Personality traits:</strong> Extrovert, born leaders, resourceful, energetic,
+                            outspoken,
+                            dominant – “a get it done person”. They may also be short-tempered, critical, irritable and
+                            impatient.</p>
+                    </div>
+
+                    <div class="melancholic-description">
+                        <p><strong>Physical appearance:</strong> Thin/bony frame, quick/anxious walk, cold and dry skin
+                            texture, speech: fast – soft or loud.</p>
+
+                        <p><strong>Tendencies:</strong> As this temperamental type has Cold & Dry qualities, they prefer
+                            humid (Hot & Moist) weather, hot drinks, fixed mealtimes, require 5-6 hours’ sleep. He/she
+                            will
+                            be inclined to illnesses such as insomnia, gas related illnesses, bone and joint complaints.
+                        </p>
+
+                        <p><strong>Personality traits:</strong> Introvert, philosophical, logical, analytical,
+                            organized,
+                            imaginative – “a get it right person”. They may also be perfectionist, anxious and
+                            skeptical.
+                        </p>
+                    </div>
+                </div>
+                <div class="results-buttons-section">
+                    <button type="button" class="temperament-reload-button">Retake</button>
+                    <button type="button" class="temperament-book-button">Book an Appointment</button>
+                </div>
+            </div>
             <form action="#" class="temperament-form">
-                <div class="form-step form-step-active" id="frame-section">
+                <div class="form-step form-step-active" id="skeletal-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Frame</div>
-                        <div class="temperament-explanation">Select the option below that describes your body type.</div>
+                        <div class="temperament-title">Skeletal Structure</div>
+                        <div class="temperament-explanation">My basic skeletal structure might best be characterized as;
+                        </div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="frame1" name="frame" value="sanguinous" checked>
+                                <input type="radio" id="skeletal1" name="skeletal" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="frame1">Medium to large frame, more muscle</label>
+                                    <label for="skeletal1">Angular, curvy, compact</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="frame2" name="frame" value="phlegmatic">
+                                <input type="radio" id="skeletal2" name="skeletal" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="frame2">Medium to large frame, more fat</label>
+                                    <label for="skeletal2">Rounded, childlike, smaller than average</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="frame3" name="frame" value="bilious">
+                                <input type="radio" id="skeletal3" name="skeletal" value="bilious">
                                 <div class="label-div">
-                                    <label for="frame3">Medium frame, lean</label>
+                                    <label for="skeletal3">Squarish, solid, robust, larger than average for my
+                                        sex</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="frame4" name="frame" value="melancholic">
+                                <input type="radio" id="skeletal4" name="skeletal" value="melancholic">
                                 <div class="label-div">
-                                    <label for="frame4">Thin, bony frame (short / tall)</label>
+                                    <label for="skeletal4">Willowy, long, delicate, tall</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-next-button" id="front-to-gait">Next</button>
+                            <button type="button" class="temperament-next-button" id="front-to-facial">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="gait-section">
+                <div class="form-step" id="facial-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Gait</div>
-                        <div class="temperament-explanation">Select the option below that describes how you walk.</div>
+                        <div class="temperament-title">Select your Facial Features</div>
+                        <div class="temperament-explanation">My facial features include mostly;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="gait1" name="gait" value="sanguinous" checked>
+                                <input type="radio" id="facial1" name="facial" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="gait1">Macho stride</label>
+                                    <label for="facial1">Heart shape, deep-set eyes, small mouth, crowded teeth, small
+                                        pointed chin, forehead narrowing towards top, widow's peak hairline</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="gait2" name="gait" value="phlegmatic">
+                                <input type="radio" id="facial2" name="facial" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="gait2">Slow pace</label>
+                                    <label for="facial2">Rounded face, small teeth, youthful smile, rounded cheeks,
+                                        almond eyes</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="gait3" name="gait" value="bilious">
+                                <input type="radio" id="facial3" name="facial" value="bilious">
                                 <div class="label-div">
-                                    <label for="gait3">Medium frame, lean</label>
+                                    <label for="facial3">Squarish shape, broadish forehead, big teeth, squared jaw,
+                                        rounded eyes relatively close together</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="gait4" name="gait" value="melancholic">
+                                <input type="radio" id="facial4" name="facial" value="melancholic">
                                 <div class="label-div">
-                                    <label for="gait4">Thin, bony frame (short / tall)</label>
+                                    <label for="facial4">Oval shape, shallow set, open eyes, even front teeth, wide
+                                        smile, high cheekbones, high forehead</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-frame">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-complexion">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-skeletal">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-weight">Next</button>
                         </div>
                     </div>
                 </div>
 
-                
-                <div class="form-step" id="complexion-section">
+
+                <div class="form-step" id="weight-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Complexion/Skin Texture</div>
-                        <div class="temperament-explanation">Select the option below that describes your complexion/skin texture.</div>
+                        <div class="temperament-title">Describe your weight gain</div>
+                        <div class="temperament-explanation">When (and if) I put on weight, it goes mostly to my;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="complexion1" name="complexion" value="sanguinous" checked>
+                                <input type="radio" id="weight1" name="weight" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="complexion1">Reddish (light skin) or shiny (dark skin), Moderate in softness and moistness, warm</label>
+                                    <label for="weight1">Outside of thighs, inside of thighs, pear shaped</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="complexion2" name="complexion" value="phlegmatic">
+                                <input type="radio" id="weight2" name="weight" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="complexion2">Whitish / pale Cool, moist, soft</label>
+                                    <label for="weight2">All over, knees, face, apple shaped</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="complexion3" name="complexion" value="bilious">
+                                <input type="radio" id="weight3" name="weight" value="bilious">
                                 <div class="label-div">
-                                    <label for="complexion3">Warm, dry</label>
+                                    <label for="weight3">Waist, back of shoulders, breasts in women, neck in men,
+                                        inverted pear shaped</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="complexion4" name="complexion" value="melancholic">
+                                <input type="radio" id="weight4" name="weight" value="melancholic">
                                 <div class="label-div">
-                                    <label for="complexion4">Dry, rough, cold</label>
+                                    <label for="weight4">Back of upper arms and butt, belly in men, hourglass
+                                        shaped</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-gait">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-climate">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-facial">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-hands">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="climate-section">
+                <div class="form-step" id="hands-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Climatic Preferences</div>
-                        <div class="temperament-explanation">Select the option below that describes the type of weather you prefer.</div>
+                        <div class="temperament-title">Describe your hands</div>
+                        <div class="temperament-explanation">My hands are mostly;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="climate1" name="climate" value="sanguinous" checked>
+                                <input type="radio" id="hands1" name="hands" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="climate1">Prefers cold, dry conditions, Winter and Autumn</label>
+                                    <label for="hands1">Small, short, would never make it in a nail polish ad</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="climate2" name="climate" value="phlegmatic">
+                                <input type="radio" id="hands2" name="hands" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="climate2">Prefers hot, dry conditions, Summer and Spring</label>
+                                    <label for="hands2">Delicate, small</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="climate3" name="climate" value="bilious">
+                                <input type="radio" id="hands3" name="hands" value="bilious">
                                 <div class="label-div">
-                                    <label for="climate3">Prefers cold, moist conditions, Winter and rainy weather</label>
+                                    <label for="hands3">Big, squarish, good for handshake</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="climate4" name="climate" value="melancholic">
+                                <input type="radio" id="hands4" name="hands" value="melancholic">
                                 <div class="label-div">
-                                    <label for="climate4">Prefers hot, moist conditions, Summer and raining weather</label>
+                                    <label for="hands4">One of my best features, long, tapered</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-complexion">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-food">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-weight">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-anger">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="food-section">
+                <div class="form-step" id="anger-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Appetite</div>
-                        <div class="temperament-explanation">Select the option below that describes you appetite.</div>
+                        <div class="temperament-title">What do you do when angry?</div>
+                        <div class="temperament-explanation">When I get angry, I tend to;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="food1" name="food" value="sanguinous" checked>
+                                <input type="radio" id="anger1" name="anger" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="food1">Healthy appetite with a moderate to excessive thirst</label>
+                                    <label for="anger1">Argue, persuade, convince, jabber on, bluster, bombast</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="food2" name="food" value="phlegmatic">
+                                <input type="radio" id="anger2" name="anger" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="food2">Slow, steady appetite, low thirst, can skip meals</label>
+                                    <label for="anger2">Pout, act out, yell, cry, complain</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="food3" name="food" value="bilious">
+                                <input type="radio" id="anger3" name="anger" value="bilious">
                                 <div class="label-div">
-                                    <label for="food3">Healthy appetite, excessive thirst, cannot skip meals</label>
+                                    <label for="anger3">Take over, win through intimidation</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="food4" name="food" value="melancholic">
+                                <input type="radio" id="anger4" name="anger" value="melancholic">
                                 <div class="label-div">
-                                    <label for="food4">Irregular and variable appetite and thirst</label>
+                                    <label for="anger4">Deny, accuse, blame, withdraw, sulk</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-climate">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-drink">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-hands">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-happy">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="drink-section">
+                <div class="form-step" id="happy-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Drink Preferences</div>
-                        <div class="temperament-explanation">Select the option below that describes the type of drinks you prefer.</div>
+                        <div class="temperament-title">What do you do when happy or excited?</div>
+                        <div class="temperament-explanation">When I am happy and excited, I tend to;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="drink1" name="drink" value="sanguinous" checked>
+                                <input type="radio" id="happy1" name="happy" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="drink1">Prefers cold drinks</label>
+                                    <label for="happy1">Want to throw a party, get others to feel the same way</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="drink2" name="drink" value="phlegmatic">
+                                <input type="radio" id="happy2" name="happy" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="drink2">Prefers hot drinks</label>
+                                    <label for="happy2">Exclaim, want to play and laugh with good friends</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="drink3" name="drink" value="bilious">
+                                <input type="radio" id="happy3" name="happy" value="bilious">
                                 <div class="label-div">
-                                    <label for="drink3">Prefers cold drinks</label>
+                                    <label for="happy3">Feel superconfident, plan big things, enroll others in my
+                                        vision</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="drink4" name="drink" value="melancholic">
+                                <input type="radio" id="happy4" name="happy" value="melancholic">
                                 <div class="label-div">
-                                    <label for="drink4">Prefers hot drinks</label>
+                                    <label for="happy4">Want to celebrate, get creative, dance, sing, often by
+                                        myself</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-food">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-sleep">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-anger">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-nasty">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="sleep-section">
+                <div class="form-step" id="nasty-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Sleeping Pattern</div>
-                        <div class="temperament-explanation">Select the option below that describes your sleeping pattern.</div>
+                        <div class="temperament-title">What do you do when a stranger is nasty to you?</div>
+                        <div class="temperament-explanation">If someone I met is nasty to me, I am most likely to;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="sleep1" name="sleep" value="sanguinous" checked>
+                                <input type="radio" id="nasty1" name="nasty" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="sleep1">Moderate to Deep</label>
+                                    <label for="nasty1">Respond with sarcasm and hope not to meet them again</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="sleep2" name="sleep" value="phlegmatic">
+                                <input type="radio" id="nasty2" name="nasty" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="sleep2">Heavy, tendency to oversleep</label>
+                                    <label for="nasty2">Give them a second chance</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="sleep3" name="sleep" value="bilious">
+                                <input type="radio" id="nasty3" name="nasty" value="bilious">
                                 <div class="label-div">
-                                    <label for="sleep3">Low but sound, tendency to insomnia</label>
+                                    <label for="nasty3">Tell them off mightily</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="sleep4" name="sleep" value="melancholic">
+                                <input type="radio" id="nasty4" name="nasty" value="melancholic">
                                 <div class="label-div">
-                                    <label for="sleep4">Interrupted, tendency towards insomnia</label>
+                                    <label for="nasty4">Go out of my way to avoid them</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-drink">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-hours">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-happy">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-snacks">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="hours-section">
+                <div class="form-step" id="snacks-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Amount of Sleep</div>
-                        <div class="temperament-explanation">Select the option below that describes the amount of sleep you get.</div>
+                        <div class="temperament-title">Select your favourite snack foods</div>
+                        <div class="temperament-explanation">My favourite snack foods fall mostly into this category;
+                        </div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="hours1" name="hours" value="sanguinous" checked>
+                                <input type="radio" id="snacks1" name="snacks" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="hours1">6 to 8 hours</label>
+                                    <label for="snacks1">buttery oastries, cheesecake, cinnamon buns, gingerbread and
+                                        cream cheese</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="hours2" name="hours" value="phlegmatic">
+                                <input type="radio" id="snacks2" name="snacks" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="hours2">At least 8 hours</label>
+                                    <label for="snacks2">Milk, cheese, fruit, sweetened yogurts</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="hours3" name="hours" value="bilious">
+                                <input type="radio" id="snacks3" name="snacks" value="bilious">
                                 <div class="label-div">
-                                    <label for="hours3">5 to 6 hours</label>
+                                    <label for="snacks3">Salted peanuts, chips, or a quick hamburger</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="hours4" name="hours" value="melancholic">
+                                <input type="radio" id="snacks4" name="snacks" value="melancholic">
                                 <div class="label-div">
-                                    <label for="hours4">6 to 7 hours</label>
+                                    <label for="snacks4">Sweets, chocolate, bread, sugar, cookies</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-sleep">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-speech">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-nasty">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-excercise">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="speech-section">
+                <div class="form-step" id="excercise-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Speech Pattern</div>
-                        <div class="temperament-explanation">Select the option below that describes your speech pattern.</div>
+                        <div class="temperament-title">Excercise preference</div>
+                        <div class="temperament-explanation">The kind of excercise I like most is;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="speech1" name="speech" value="sanguinous" checked>
+                                <input type="radio" id="excercise1" name="excercise" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="speech1">Clear, moderate to loud</label>
+                                    <label for="excercise1">Self-regulated, on my own, rhythmic</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="speech2" name="speech" value="phlegmatic">
+                                <input type="radio" id="excercise2" name="excercise" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="speech2">Slow, soft</label>
+                                    <label for="excercise2">With a group, noncompetitive</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="speech3" name="speech" value="bilious">
+                                <input type="radio" id="excercise3" name="excercise" value="bilious">
                                 <div class="label-div">
-                                    <label for="speech3">Sharp, talkative, loud</label>
+                                    <label for="excercise3">Highly competitive</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="speech4" name="speech" value="melancholic">
+                                <input type="radio" id="excercise4" name="excercise" value="melancholic">
                                 <div class="label-div">
-                                    <label for="speech4">Fast, less vocal, soft</label>
+                                    <label for="excercise4">Fast moving, with lots of variety</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-hours">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-personality">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-snacks">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-career">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="personality-section">
+                <div class="form-step" id="career-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Personality Trait</div>
-                        <div class="temperament-explanation">Select the option below that describes your personality.</div>
+                        <div class="temperament-title">Select your Career</div>
+                        <div class="temperament-explanation">My ideal career would be more like;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="personality1" name="personality" value="sanguinous" checked>
+                                <input type="radio" id="career1" name="career" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="personality1">Persuasive, sociable, outgoing, talkative</label>
+                                    <label for="career1">Teaching people how to enjoy all that life has to offer</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="personality2" name="personality" value="phlegmatic">
+                                <input type="radio" id="career2" name="career" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="personality2">Calm, accommodating, patient, good listener</label>
+                                    <label for="career2">Helping people overcome challenges in different areas of their
+                                        lives</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="personality3" name="personality" value="bilious">
+                                <input type="radio" id="career3" name="career" value="bilious">
                                 <div class="label-div">
-                                    <label for="personality3">Resourceful, outspoken, dominant, leader, may be short tempered</label>
+                                    <label for="career3">Leading a top-notch corporation or organization</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="personality4" name="personality" value="melancholic">
+                                <input type="radio" id="career4" name="career" value="melancholic">
                                 <div class="label-div">
-                                    <label for="personality4">Thoughtful, logical, analytical, tend to be perfectionist</label>
+                                    <label for="career4">Creating a masterpiece of art, literature, or culture</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-speech">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-emotional">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-exercise">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-success">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="emotional-section">
+                <div class="form-step" id="success-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Emotional Trait</div>
-                        <div class="temperament-explanation">Select the option below that describes your emptional trait.</div>
+                        <div class="temperament-title">What is Success?</div>
+                        <div class="temperament-explanation">Success for me is closest to;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="emotional1" name="emotional" value="sanguinous" checked>
+                                <input type="radio" id="success1" name="success" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="emotional1">Playful, cheerful, excitable, disorganized, tends to exaggerate</label>
+                                    <label for="success1">Setting an example to others of extraordinary living</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="emotional2" name="emotional" value="phlegmatic">
+                                <input type="radio" id="success2" name="success" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="emotional2">shy, selfcontained, indecisive</label>
+                                    <label for="success2">Having a rewarding family life</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="emotional3" name="emotional" value="bilious">
+                                <input type="radio" id="success3" name="success" value="bilious">
                                 <div class="label-div">
-                                    <label for="emotional3">Aggressive,angry, irritable,impatient</label>
+                                    <label for="success3">Being all I can be, a leaders leader</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="emotional4" name="emotional" value="melancholic">
+                                <input type="radio" id="success4" name="success" value="melancholic">
                                 <div class="label-div">
-                                    <label for="emotional4">Fearful, insecure,suspicious, anxious</label>
+                                    <label for="success4">Getting the most out of life</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-personality">Prev</button>
-                            <button type="button" class="temperament-next-button" id="front-to-health">Next</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-career">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-day">Next</button>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="form-step" id="health-section">
+                <div class="form-step" id="day-section">
                     <div class="temperament-page">
-                        <div class="temperament-title">Select your Health Problems</div>
-                        <div class="temperament-explanation">Select the option below that describes your health problems.</div>
+                        <div class="temperament-title">What is your ideal day?</div>
+                        <div class="temperament-explanation">The pattern of my ideal day is closest to;</div>
                         <div class="temperament-options">
                             <div class="label-group">
-                                <input type="radio" id="health1" name="health" value="sanguinous" checked>
+                                <input type="radio" id="day1" name="day" value="sanguinous" checked>
                                 <div class="label-div">
-                                    <label  for="health1">Hypertension, Diabetes</label>
+                                    <label for="day1">Sleep consistantly, love mornings and evenings</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="health2" name="health" value="phlegmatic">
+                                <input type="radio" id="day2" name="day" value="phlegmatic">
                                 <div class="label-div">
-                                    <label for="health2">Phlegm related disorders</label>
+                                    <label for="day2">Lots of sleep, early to bed, enjoy daytime best</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="health3" name="health" value="bilious">
+                                <input type="radio" id="day3" name="day" value="bilious">
                                 <div class="label-div">
-                                    <label for="health3">Heat related disorders</label>
+                                    <label for="day3">Sleep less than most people, going all day, relax early
+                                        evening</label>
                                 </div>
                             </div>
                             <hr class="solid">
                             <div class="label-group">
-                                <input type="radio" id="health4" name="health" value="melancholic">
+                                <input type="radio" id="day4" name="day" value="melancholic">
                                 <div class="label-div">
-                                    <label for="health4">Indigestion and gas related disorders</label>
+                                    <label for="day4">Sleep late, lively after breakfast, sleepy after lunch, sometimes
+                                        stay up late</label>
                                 </div>
                             </div>
                             <hr class="solid">
                         </div>
                         <div class="temperament-buttons-section">
-                            <button type="button" class="temperament-prev-button" id="back-to-emotional">Prev</button>
-                            <button class="temperament-submit-button" id="temperament-submit">Submit</button>
+                            <button type="button" class="temperament-prev-button" id="back-to-success">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-meals">Next</button>
                         </div>
                     </div>
                 </div>
+
+                <div class="form-step" id="meals-section">
+                    <div class="temperament-page">
+                        <div class="temperament-title">What is your meal preferences?</div>
+                        <div class="temperament-explanation">My tendency with meals is</div>
+                        <div class="temperament-options">
+                            <div class="label-group">
+                                <input type="radio" id="meals1" name="meals" value="sanguinous" checked>
+                                <div class="label-div">
+                                    <label for="meals1">I love breakfast, could skip dinner, like small protein
+                                        meals</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="meals2" name="meals" value="phlegmatic">
+                                <div class="label-div">
+                                    <label for="meals2">I don't pay much attention to meals, eat fruit pasta and dairy,
+                                        not eggs</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="meals3" name="meals" value="bilious">
+                                <div class="label-div">
+                                    <label for="meals3">I like a big protein breakfast and dinner, not big on
+                                        sweets</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="meals4" name="meals" value="melancholic">
+                                <div class="label-div">
+                                    <label for="meals4">I eat a light breakfast if any, like a large lunch, eat muffins, pasta, bagels, or vegetables for snacks</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                        </div>
+                        <div class="temperament-buttons-section">
+                            <button type="button" class="temperament-prev-button" id="back-to-day">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-weather">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-step" id="weather-section">
+                    <div class="temperament-page">
+                        <div class="temperament-title">What is your weather preference?</div>
+                        <div class="temperament-explanation">My favourite weather and time of year is;</div>
+                        <div class="temperament-options">
+                            <div class="label-group">
+                                <input type="radio" id="weather1" name="weather" value="sanguinous" checked>
+                                <div class="label-div">
+                                    <label for="weather1">Warm and wet, spring, flowers and trees blooming all over,
+                                        time of sowing, rebirth</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="weather2" name="weather" value="phlegmatic">
+                                <div class="label-div">
+                                    <label for="weather2">Cold and wet, winter, quiet, cold breezes, cozy family
+                                        feeling</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="weather3" name="weather" value="bilious">
+                                <div class="label-div">
+                                    <label for="weather3">Hot and dry, summer, everything in glorious fullness, most
+                                        active, alive time</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="weather4" name="weather" value="melancholic">
+                                <div class="label-div">
+                                    <label for="weather4">Cold and dry, autumn, time of harvest, between the summer heat
+                                        and solitude of winter</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                        </div>
+                        <div class="temperament-buttons-section">
+                            <button type="button" class="temperament-prev-button" id="back-to-meals">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-attention">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-step" id="attention-section">
+                    <div class="temperament-page">
+                        <div class="temperament-title">What causes you to pay more attention?</div>
+                        <div class="temperament-explanation">I pay best attention when things come to me by way of;
+                        </div>
+                        <div class="temperament-options">
+                            <div class="label-group">
+                                <input type="radio" id="attention1" name="attention" value="sanguinous" checked>
+                                <div class="label-div">
+                                    <label for="attention1">Smell/taste - "Let me just see how it feels." , "It feels
+                                        right to me!"</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attention2" name="attention" value="phlegmatic">
+                                <div class="label-div">
+                                    <label for="attention2">Touch - "Show me, can I touch it, hold it?" , "That really
+                                        touches me!"</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attention3" name="attention" value="bilious">
+                                <div class="label-div">
+                                    <label for="attention3">Sight - "I'll believe it when I see it.", "Let's just see",
+                                        "I can see it now! I see, I see." </label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attention4" name="attention" value="melancholic">
+                                <div class="label-div">
+                                    <label for="attention4">Sound - "Let me hear your opinion and then I'll tell you.",
+                                        "I hear you, that sounds right to me."</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                        </div>
+                        <div class="temperament-buttons-section">
+                            <button type="button" class="temperament-prev-button" id="back-to-weather">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-decisions">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-step" id="decisions-section">
+                    <div class="temperament-page">
+                        <div class="temperament-title">How do you make decisions?</div>
+                        <div class="temperament-explanation">When I make a decision;</div>
+                        <div class="temperament-options">
+                            <div class="label-group">
+                                <input type="radio" id="decisions1" name="decisions" value="sanguinous" checked>
+                                <div class="label-div">
+                                    <label for="decisions1">I make a quick assessment, wait for a sense of intuition,
+                                        decide and then stick with it, but remain flexible about little things</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="decisions2" name="decisions" value="phlegmatic">
+                                <div class="label-div">
+                                    <label for="decisions2">I take my time, gather opinions, and then make my choice,
+                                        and may reconsider if trusted friends advise caution</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="decisions3" name="decisions" value="bilious">
+                                <div class="label-div">
+                                    <label for="decisions3">I make quick decisions, go with my gut and rarely look
+                                        back</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="decisions4" name="decisions" value="melancholic">
+                                <div class="label-div">
+                                    <label for="decisions4">I think long and hard to decide what is the best course and
+                                        often reexamine my choice if there are any glitches but defend my choice
+                                        actively against other's opinions</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                        </div>
+                        <div class="temperament-buttons-section">
+                            <button type="button" class="temperament-prev-button" id="back-to-attention">Prev</button>
+                            <button type="button" class="temperament-next-button" id="front-to-attraction">Next</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-step" id="attraction-section">
+                    <div class="temperament-page">
+                        <div class="temperament-title">Select the type of person you are attracted to</div>
+                        <div class="temperament-explanation">If attracted to men;</div>
+                        <div class="temperament-options">
+                            <div class="label-group">
+                                <input type="radio" id="attraction1" name="attraction" value="sanguinous" checked>
+                                <div class="label-div">
+                                    <label for="attraction1">Tall and wiry with tall forehead, intellectual look</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attraction2" name="attraction" value="phlegmatic">
+                                <div class="label-div">
+                                    <label for="attraction2">Big and strong with wide forehead, big chest, powerful
+                                        look</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attraction3" name="attraction" value="bilious">
+                                <div class="label-div">
+                                    <label for="attraction3">Smaller and youthful looking with rounded features, smiling
+                                        eyes</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attraction4" name="attraction" value="melancholic">
+                                <div class="label-div">
+                                    <label for="attraction4">Shorter and athletic-looking with well-formed butt, may
+                                        have early hairline recession, intellectual look</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="temperament-explanation">If attracted to women;</div>
+                            <div class="label-group">
+                                <input type="radio" id="attraction5" name="attraction" value="sanguinous">
+                                <div class="label-div">
+                                    <label for="attraction5">Shapely, tall, and big-breasted with narrow ankles, long
+                                        fingers</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attraction6" name="attraction" value="phlegmatic">
+                                <div class="label-div">
+                                    <label for="attraction6">Strong and athletic-looking with wide shoulders, small
+                                        hips</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attraction7" name="attraction" value="bilious">
+                                <div class="label-div">
+                                    <label for="attraction7">Small and youthful-looking with rounded face and
+                                        body</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="label-group">
+                                <input type="radio" id="attraction8" name="attraction" value="melancholic">
+                                <div class="label-div">
+                                    <label for="attraction8">Medium build and hour-glass figured with delicate facial
+                                        features</label>
+                                </div>
+                            </div>
+                            <hr class="solid">
+                            <div class="temperament-buttons-section">
+                                <button type="button" class="temperament-prev-button"
+                                    id="back-to-decisions">Prev</button>
+                                <button type="button" class="temperament-submit-button"
+                                    id="temperament-submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
             </form>
 
-            <div>
-                
-            </div>
+
+
         </div>
     </div>
-    
+
 </body>
+
 </html>
