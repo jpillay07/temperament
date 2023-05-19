@@ -375,6 +375,15 @@ input[type='radio']:checked:before {
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding-bottom: 20px;
+}
+
+.subdominant-temperament{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .dominant-text{
@@ -383,7 +392,25 @@ input[type='radio']:checked:before {
   font-size: 20px;
 }
 
+.subdominant-text{
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 20px;
+}
+
 .dominant-box{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.subdominant-box{
   display: flex;
   justify-content: center;
   text-align: center;
@@ -405,7 +432,21 @@ input[type='radio']:checked:before {
   
 }
 
+.subdominant-box::before{ 
+  content: '';
+  position: absolute;
+  inset: -5px 35px;
+  background: linear-gradient(315deg, #577049, #0eea71);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+  
+}
+
 .dominant-box:hover::before{ 
+  inset: -10px 0px;
+}
+
+.subdominant-box:hover::before{ 
   inset: -10px 0px;
 }
 
@@ -427,13 +468,34 @@ input[type='radio']:checked:before {
   z-index: 1;
 }
 
+.subdominant-box::after{ 
+  content: '';
+  position: absolute;
+  inset: 5px;
+  background: white;
+  border-radius: 50%;
+  z-index: 1;
+}
+
 .dominant-icon{
   position: absolute;
   z-index: 3;
   margin: auto;
 }
 
+.subdominant-icon{
+  position: absolute;
+  z-index: 3;
+  margin: auto;
+}
+
 .sanguinous-description,.phlegmatic-description,.bilious-description,.melancholic-description{
+  font-family: 'Open Sans', sans-serif;
+  display: none;
+  opacity: 0;
+}
+
+.sub-sanguinous-description,.sub-phlegmatic-description,.sub-bilious-description,.sub-melancholic-description{
   font-family: 'Open Sans', sans-serif;
   display: none;
   opacity: 0;

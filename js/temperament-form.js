@@ -112,8 +112,13 @@ submitButton.addEventListener("click", ()=>{
 
     console.log(sortedAnswers);
 
+    //Dominant icon and text
     const dominantIcon = document.querySelector(".dominant-icon");
     const dominantText = document.querySelector(".dominant-text");
+
+    //Subdominant icon and text
+    const subdominantIcon = document.querySelector(".subdominant-icon");
+    const subdominantText = document.querySelector(".subdominant-text");
     
 
     if(sortedAnswers[0].temperament == "sanguinous"){
@@ -141,9 +146,41 @@ submitButton.addEventListener("click", ()=>{
     }
 
     if(sortedAnswers[0].temperament == "melancholic"){
-        dominantIcon.src = "images/melancholic.png";
+        subdominantIcon.src = "images/melancholic.png";
         const temperamentDescription = document.querySelector(".melancholic-description");
-        dominantText.textContent ="Melancholic";
+        subdominantText.textContent ="Melancholic";
+
+        temperamentDescription.classList.add("description-active");
+    }
+
+    if(sortedAnswers[1].temperament == "sanguinous"){
+        subdominantIcon.src = "images/samguine.png";
+        const temperamentDescription = document.querySelector(".sub-sanguinous-description");
+        subdominantText.textContent ="Sanguinous";
+
+        temperamentDescription.classList.add("description-active");
+    }
+
+    if(sortedAnswers[1].temperament == "phlegmatic"){
+        subdominantIcon.src = "images/phlegmatic.png";
+        const temperamentDescription = document.querySelector(".sub-phlegmatic-description");
+        subdominantText.textContent ="Phlegmatic";
+
+        temperamentDescription.classList.add("description-active");
+    }
+
+    if(sortedAnswers[1].temperament == "bilious"){
+        subdominantIcon.src = "images/bilious.png";
+        const temperamentDescription = document.querySelector(".sub-bilious-description");
+        subdominantText.textContent ="Bilious";
+
+        temperamentDescription.classList.add("description-active");
+    }
+
+    if(sortedAnswers[1].temperament == "melancholic"){
+        subdominantIcon.src = "images/melancholic.png";
+        const temperamentDescription = document.querySelector(".sub-melancholic-description");
+        subdominantText.textContent ="Melancholic";
 
         temperamentDescription.classList.add("description-active");
     }
